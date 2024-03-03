@@ -1,51 +1,81 @@
 ---
 interface Props {
-	title: string;
+    title: string;
+    className?: string;
 }
 
+import { ViewTransitions } from 'astro:transitions';
+
+import NavLink from '@components/NavLink.astro';
+
 const { title } = Astro.props;
+const currentDir = Astro.url.pathname.split('/').pop();
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta
+            name='description'
+            content='Astro description'
+        />
+        <meta
+            name='viewport'
+            content='width=device-width'
+        />
+        <link
+            rel='icon'
+            type='image/svg+xml'
+            href='/favicon.svg'
+        />
+        <meta
+            name='generator'
+            content={Astro.generator}
+        />
+        <meta
+            name='author'
+            content='Gaspar Gómez Kral'
+        />
+        <meta
+            name='description'
+            content='Portfolio de Gaspar Gómez Kral'
+        />
+        <meta
+            name='keywords'
+            content=' portfolio, gaspar, gómez, kral, frontend, developer, web, javaScript, Astro, React, tailwind'
+        />
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body>
+        <main
+            class='flex flex-col items-center justify-center h-screen transition-colors duration-500 dark:text-primary-light dark:bg-primary-dark bg-primary-light font-nunito'
+        >
+            <nav
+                class='flex w-full justify-between items-center h-fit py-2 px-8 bg-transparent fixed top-0'
+            >
+                <menu class='flex gap-6 py-2'>
+                    <NavLink
+                        client:load
+                        href='./'
+                        title='About'
+                        currentDir={currentDir}
+                    />
+                    <NavLink
+                        client:load
+                        href='./projects'
+                        title='Projects & Experience'
+                        currentDir={currentDir}
+                    />
+                    <NavLink
+                        client:load
+                        href='./contact'
+                        title='Contact'
+                        currentDir={currentDir}
+                    />
+                </menu>
+            </nav>
+            <slot />
+        </main>
+    </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>

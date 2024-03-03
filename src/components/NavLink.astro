@@ -1,0 +1,14 @@
+---
+interface Props {
+    href: string;
+    title: string;
+    currentDir?: string;
+}
+const { href, title, currentDir } = Astro.props;
+---
+
+<li
+    class={`transition-colors duration-300 font-bold font-frutiger text-lg ${`./${currentDir}` === href ? 'text-acent' : 'text-primary'}`}
+>
+    <a href={href}>{title}</a>
+</li>
