@@ -1,54 +1,57 @@
-# Astro Starter Kit: Basics
+# Gaspar Gomez Kral - Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido a mi portfolio! Soy Gaspar Gomez Kral, un apasionado desarrollador frontend con sólidos conocimientos en programación en JAVA. En este espacio, compartiré mi experiencia, habilidades y proyectos que he llevado a cabo.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Acerca de mí
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Soy un entusiasta de la tecnología con una fuerte dedicación al desarrollo frontend. Mi objetivo es crear experiencias web impactantes y funcionales, centrándome en la usabilidad y el diseño elegante. Además, cuento con habilidades sólidas en programación en JAVA, lo que me permite abordar proyectos de manera integral.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Habilidades
 
-## 🚀 Project Structure
+-   **Desarrollo Frontend**: HTML, CSS, JavaScript, ReactJS, Tailwind, Astro, 
+-   **Programación Backend**: Java, Express, Node
+-   **Diseño Responsivo**: Creación de interfaces adaptables a diferentes dispositivos.
+-   **Gestión de Proyectos**: Experiencia en metodologías ágiles.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Proyectos Destacados
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### [Proyecto 1: The Real Color]
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Un proyecto especializado en la creación de paletas de colores personalizadas y ajustables, que permite su posterior exportación a formatos como Tailwind o CSS vanilla.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### [Proyecto 2: Nombre del Proyecto]
 
-Any static assets, like images, can be placed in the `public/` directory.
+Otra descripción breve de otro proyecto destacado, resaltando tus contribuciones y los resultados obtenidos.
 
-## 🧞 Commands
+## Experiencia Laboral
 
-All commands are run from the root of the project, from a terminal:
+### [Nombre de la Empresa - Cargo]
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+-   Descripción de tus responsabilidades y logros en el puesto.
+-   Destaca proyectos relevantes o contribuciones significativas.
 
-## 👀 Want to learn more?
+### [Otra Empresa - Otro Cargo]
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+-   Repite el formato para cada experiencia laboral relevante.
+
+## Educación
+
+### [Título Universitario - Nombre de la Universidad]
+
+-   Año de graduación.
+-   Cursos relevantes y logros académicos.
+
+## Certificaciones
+
+-   [Certificación 1 - Nombre de la Certificación]
+-   [Certificación 2 - Nombre de la Certificación]
+
+## Contacto
+
+¡Estoy siempre abierto a nuevas oportunidades y colaboraciones! Si tienes alguna pregunta, sugerencia o simplemente quieres charlar, no dudes en ponerte en contacto conmigo:
+
+-   Email: [gaspargkral@gmail.com]
+-   LinkedIn: [www.linkedin.com/in/gaspar-gómez-kral-533408270]
+-   GitHub: [https://github.com/GasparKral]
+
+¡Gracias por visitar mi portfolio! Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo. ¡Hagamos cosas increíbles juntos! 🚀
