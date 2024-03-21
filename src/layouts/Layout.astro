@@ -12,7 +12,10 @@ const { title } = Astro.props;
 const currentDir = Astro.url.pathname.split('/').pop();
 ---
 
-<html lang='en'>
+<html
+    lang='en'
+    transition:persist
+>
     <head>
         <meta charset='UTF-8' />
         <meta
@@ -48,33 +51,30 @@ const currentDir = Astro.url.pathname.split('/').pop();
         <ViewTransitions />
     </head>
     <body>
-        <main
-            class='flex flex-col items-center justify-center h-screen transition-colors duration-500 dark:text-primary-light dark:bg-primary-dark bg-primary-light font-nunito'
+        <nav
+            class='flex w-full justify-start items-center h-fit py-2 px-8 bg-transparent fixed top-0 backdrop-blur-md'
         >
-            <nav
-                class='flex w-full justify-between items-center h-fit py-2 px-8 bg-transparent fixed top-0'
-            >
-                <menu class='flex gap-6 py-2'>
-                    <NavLink
-                        client:load
-                        href='./'
-                        title='About'
-                        currentDir={currentDir}
-                    />
-                    <NavLink
-                        client:load
-                        href='./projects'
-                        title='Projects & Experience'
-                        currentDir={currentDir}
-                    />
-                    <NavLink
-                        client:load
-                        href='./contact'
-                        title='Contact'
-                        currentDir={currentDir}
-                    />
-                </menu>
-            </nav>
+            <menu class='flex gap-10 py-2'>
+                <NavLink
+                    href='./'
+                    title='About'
+                    currentDir={currentDir}
+                />
+                <NavLink
+                    href='./projects'
+                    title='Projects & Experience'
+                    currentDir={currentDir}
+                />
+                <NavLink
+                    href='./contact'
+                    title='Contact'
+                    currentDir={currentDir}
+                />
+            </menu>
+        </nav>
+        <main
+            class='flex flex-col py-24 px-16 w-full items-center h-screen transition-colors duration-500 dark:text-primary-light dark:bg-primary-dark bg-primary-light font-nunito'
+        >
             <slot />
         </main>
     </body>

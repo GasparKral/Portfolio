@@ -8,7 +8,7 @@ const { href, title, currentDir } = Astro.props;
 ---
 
 <li
-    class={`transition-colors duration-300 font-bold font-frutiger text-lg ${`./${currentDir}` === href ? 'text-acent' : 'text-primary'}`}
+    class={`transition-colors duration-300 font-bold font-frutiger text-xl ${`./${currentDir}` === href ? 'text-acent' : 'text-primary'}`}
 >
     <a href={href}>{title}</a>
 </li>
