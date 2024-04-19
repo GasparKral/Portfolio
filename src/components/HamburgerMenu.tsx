@@ -22,7 +22,7 @@ export const HamburguerMenu = () => {
             {!isOpen ? null : (
                 <>
                     <li className='px-4'>
-                        <a href='/'>About</a>
+                        <a href='/Portfolio/'>About</a>
                     </li>
                     <li className='px-4'>
                         <a href='/projects'>Projects & Experience</a>
