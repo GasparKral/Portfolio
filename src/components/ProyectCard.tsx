@@ -37,10 +37,16 @@ const ProyectCard = ({
                 <p>{description}</p>
                 <footer className='flex justify-between align-middle absolute bottom-4 right-4 w-[calc(100%-2rem)]'>
                     <div className='flex gap-2'>
-                        <a href={codeURL}>
+                        <a
+                            className='hover:drop-shadow-white transition-shadow duration-200'
+                            href={codeURL}
+                        >
                             <SourceCodeLogo />
                         </a>
-                        <a href={liveURL}>
+                        <a
+                            className='hover:drop-shadow-white transition-shadow duration-200'
+                            href={liveURL}
+                        >
                             <WatchLogo />
                         </a>
                     </div>

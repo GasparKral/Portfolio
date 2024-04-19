@@ -1,0 +1,58 @@
+---
+interface socials {
+    platform: string;
+    url: string;
+}
+interface Props {
+    listStyle?: string;
+    style?: string;
+}
+const socials: socials[] = [
+    {
+        platform: 'Github',
+        url: 'https://github.com/GasparKral',
+    },
+    {
+        platform: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/gaspar-gómez-kral-533408270',
+    },
+    {
+        platform: 'Twitter',
+        url: 'https://twitter.com/GasparKral',
+    },
+    {
+        platform: 'Instagram',
+        url: 'https://www.instagram.com/gasparkral/',
+    },
+    {
+        platform: 'discord',
+        url: 'https://discord.com/users/336089542752993280',
+    },
+];
+
+import { LogoDetector } from '@/scripts/LogoDetector';
+
+const { listStyle, style } = Astro.props;
+---
+
+<ul class={`flex  ${listStyle}`}>
+    {
+        socials.map((social) => (
+            <li
+                class={`transition-colors duration-300 font-bold font-frutiger text-xl hover:text-acent ${style}`}
+            >
+                <a
+                    href={social.url}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <LogoDetector
+                        client:load
+                        logos={social.platform}
+                        measures={[60, 60]}
+                    />
+                </a>
+            </li>
+        ))
+    }
+</ul>

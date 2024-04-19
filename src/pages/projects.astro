@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import { Proyects } from '@components/Proyects';
 ---
 
-<Layout title='My projects'>
+<Layout
+    title='My projects'
+    mainStyle='px-32'
+>
     <Proyects client:load />
 </Layout>

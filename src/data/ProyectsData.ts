@@ -10,7 +10,8 @@ export type ProyectsData = {
 export const ProyectsData: ProyectsData[] = [
     {
         title: 'TheRealColor',
-        description: 'A easy way to create your own color palette',
+        description:
+            'A web app that allows you to create palettes, saved and export to vanilla CSS or Tailwind',
         codeURL: '',
         liveURL: '',
         img: './ThRealColorthumb.webp',
@@ -28,7 +29,7 @@ export const ProyectsData: ProyectsData[] = [
     {
         title: 'LMweb',
         description:
-            'A blog with Astro, React and Tailwind explaining the Marks Language subject and its syllabus ',
+            'A blog made with Astro, React and Tailwind explaining the Marks Language subject and CSS ',
         codeURL: '',
         liveURL: '',
         img: './LMwebThumb.webp',
