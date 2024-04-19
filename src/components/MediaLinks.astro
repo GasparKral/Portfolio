@@ -35,7 +35,7 @@ import { LogoDetector } from '@/scripts/LogoDetector';
 const { listStyle, style } = Astro.props;
 ---
 
-<ul class={`flex  ${listStyle}`}>
+<ul class={`xl:flex hidden ${listStyle}`}>
     {
         socials.map((social) => (
             <li

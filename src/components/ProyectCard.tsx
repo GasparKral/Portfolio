@@ -8,6 +8,7 @@ const ProyectCard = ({
     liveURL,
     img,
     technologies,
+    style,
 }: {
     title: string;
     description: string;
@@ -15,19 +16,22 @@ const ProyectCard = ({
     liveURL: string;
     img: string;
     technologies: string[];
+    style?: string;
 }) => {
     return (
-        <article className=' rounded-xl grid grid-cols-2 overflow-hidden bg-neutral-800'>
+        <article
+            className={`rounded-xl grid grid-cols-2 overflow-hidden bg-neutral-800 ${style}`}
+        >
             <img
                 style={{
                     maskImage:
                         'linear-gradient(to right , rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) )',
                 }}
-                className='w-full h-full relative object-cover select-none'
-                src={`/Portfolio//${img}`}
+                className='w-full h-full relative object-cover select-none xl:block hidden'
+                src={`/${img}`}
                 alt={`image of ${title}`}
             />
-            <div className='flex flex-col gap-4 p-4 text-neutral-50 relative'>
+            <div className='flex flex-col gap-4 p-4 text-neutral-50 relative xl:col-span-1 col-span-2'>
                 <header>
                     <h2 className='text-4xl font-frutiger font-bold'>
                         {title}

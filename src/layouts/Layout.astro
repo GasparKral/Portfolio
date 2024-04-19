@@ -5,6 +5,7 @@ interface Props {
 }
 
 import { ViewTransitions } from 'astro:transitions';
+import { HamburguerMenu } from '@components/HamburgerMenu';
 
 import NavLink from '@components/NavLink.astro';
 import MediaLinks from '@components/MediaLinks.astro';
@@ -53,21 +54,22 @@ const currentDir = Astro.url.pathname.split('/').pop();
     </head>
     <body>
         <nav
-            class='flex w-full justify-between items-center h-fit py-2 px-8 bg-transparent fixed top-0 backdrop-blur-md'
+            class='xl:flex w-full justify-between items-center h-fit xl:py-2 xl:px-8 xl:bg-transparent fixed top-0 backdrop-blur-md z-10 bg-white/50'
         >
-            <menu class='flex gap-10 py-2'>
+            <HamburguerMenu client:load />
+            <menu class='xl:flex gap-10 py-2 hidden'>
                 <NavLink
-                    href='/Portfolio/'
+                    href='/'
                     title='About'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/projects'
+                    href='/projects'
                     title='Projects & Experience'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/contact'
+                    href='/contact'
                     title='Contact'
                     currentDir={currentDir}
                 />
@@ -75,7 +77,7 @@ const currentDir = Astro.url.pathname.split('/').pop();
             <MediaLinks />
         </nav>
         <main
-            class={`flex flex-col py-24 px-16 w-full min-h-screen items-center h-screen transition-colors duration-500 dark:text-primary-light dark:bg-primary-dark bg-primary-light font-nunito ${mainStyle}`}
+            class={`flex flex-col py-8 px-8 pb-20 xl:py-24 xl:px-16 w-full min-h-screen items-center h-screen transition-colors duration-500 bg-primary-light font-nunito ${mainStyle}`}
         >
             <slot />
         </main>
