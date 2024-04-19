@@ -24,7 +24,7 @@ const ProyectCard = ({
                         'linear-gradient(to right , rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) )',
                 }}
                 className='w-full h-full relative object-cover select-none'
-                src={img}
+                src={`/Portfolio//${img}`}
                 alt={`image of ${title}`}
             />
             <div className='flex flex-col gap-4 p-4 text-neutral-50 relative'>
