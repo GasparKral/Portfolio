@@ -59,17 +59,17 @@ const currentDir = Astro.url.pathname.split('/').pop();
             <HamburguerMenu client:load />
             <menu class='xl:flex gap-10 py-2 hidden'>
                 <NavLink
-                    href='Portfolio/'
+                    href='/'
                     title='About'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/projects'
+                    href='/projects'
                     title='Projects & Experience'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/contact'
+                    href='/contact'
                     title='Contact'
                     currentDir={currentDir}
                 />
