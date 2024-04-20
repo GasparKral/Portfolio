@@ -25,10 +25,10 @@ export const HamburguerMenu = () => {
                         <a href='/Portfolio/'>About</a>
                     </li>
                     <li className='px-4'>
-                        <a href='/projects'>Projects & Experience</a>
+                        <a href='/Portfolio/projects'>Projects & Experience</a>
                     </li>
                     <li className='px-4'>
-                        <a href='/contact'>Contact</a>
+                        <a href='/Portfolio/contact'>Contact</a>
                     </li>
                 </>
             )}
