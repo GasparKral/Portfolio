@@ -9,7 +9,7 @@ const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <li
-    class={`transition-colors duration-300 font-bold font-frutiger text-xl ${`./${currentDir}` === href ? 'text-acent' : 'text-primary'}`}
+    class={`transition-colors duration-300 font-bold font-frutiger text-xl ${`${baseUrl + currentDir}` === href ? 'text-acent' : 'text-primary'} hover:text-acent`}
 >
     <a href={baseUrl + href}>{title}</a>
 </li>
