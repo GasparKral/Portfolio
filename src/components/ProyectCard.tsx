@@ -44,12 +44,16 @@ const ProyectCard = ({
                         <a
                             className='hover:drop-shadow-white transition-shadow duration-200'
                             href={codeURL}
+                            target='_blank'
+                            rel='noreferrer'
                         >
                             <SourceCodeLogo />
                         </a>
                         <a
                             className='hover:drop-shadow-white transition-shadow duration-200'
                             href={liveURL}
+                            target='_blank'
+                            rel='noreferrer'
                         >
                             <WatchLogo />
                         </a>
