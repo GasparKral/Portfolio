@@ -1,6 +1,6 @@
 import HamburguerLogo from '@/assets/Hamburguer';
 import { useState } from 'react';
-export const HamburguerMenu = () => {
+export const HamburguerMenu = ({ baseUrl }: { baseUrl: string }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -22,13 +22,15 @@ export const HamburguerMenu = () => {
             {!isOpen ? null : (
                 <>
                     <li className='px-4'>
-                        <a href='/Portfolio/'>About</a>
+                        <a href={baseUrl + '/'}>About</a>
                     </li>
                     <li className='px-4'>
-                        <a href='/Portfolio/projects'>Projects & Experience</a>
+                        <a href={baseUrl + '/projects'}>
+                            Projects & Experience
+                        </a>
                     </li>
                     <li className='px-4'>
-                        <a href='/Portfolio/contact'>Contact</a>
+                        <a href={baseUrl + '/contact'}>Contact</a>
                     </li>
                 </>
             )}

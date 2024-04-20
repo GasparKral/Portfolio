@@ -56,7 +56,10 @@ const currentDir = Astro.url.pathname.split('/').pop();
         <nav
             class='xl:flex w-full justify-between items-center h-fit xl:py-2 xl:px-8 xl:bg-transparent fixed top-0 backdrop-blur-md z-10 bg-white/50'
         >
-            <HamburguerMenu client:load />
+            <HamburguerMenu
+                client:load
+                baseUrl={import.meta.env.BASE_URL}
+            />
             <menu class='xl:flex gap-10 py-2 hidden'>
                 <NavLink
                     href='/Portfolio/'
