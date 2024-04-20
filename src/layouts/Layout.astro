@@ -21,17 +21,8 @@ const currentDir = Astro.url.pathname.split('/').pop();
     <head>
         <meta charset='UTF-8' />
         <meta
-            name='description'
-            content='Astro description'
-        />
-        <meta
             name='viewport'
             content='width=device-width'
-        />
-        <link
-            rel='icon'
-            type='image/svg+xml'
-            href='/favicon.svg'
         />
         <meta
             name='generator'
@@ -62,17 +53,17 @@ const currentDir = Astro.url.pathname.split('/').pop();
             />
             <menu class='xl:flex gap-10 py-2 hidden'>
                 <NavLink
-                    href='/Portfolio/'
+                    href='/'
                     title='About'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/projects'
+                    href='/projects'
                     title='Projects & Experience'
                     currentDir={currentDir}
                 />
                 <NavLink
-                    href='/Portfolio/contact'
+                    href='/contact'
                     title='Contact'
                     currentDir={currentDir}
                 />
