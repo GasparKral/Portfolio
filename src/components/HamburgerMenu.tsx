@@ -5,7 +5,7 @@ export const HamburguerMenu = ({ baseUrl }: { baseUrl: string }) => {
 
     return (
         <menu
-            className={`flex flex-col absolute top-4 left-4 text-2xl text-acent font-bold  gap-4 z-20 pb-8 pr-4 overflow-hidden ${
+            className={`xl:hidden flex flex-col absolute top-4 left-4 text-2xl text-acent font-bold  gap-4 z-20 pb-8 pr-4 overflow-hidden ${
                 isOpen ? 'bg-white/80 backdrop-blur-xl h-screen' : ''
             }`}
         >

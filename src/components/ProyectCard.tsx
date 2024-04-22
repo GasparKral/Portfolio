@@ -20,7 +20,7 @@ const ProyectCard = ({
 }) => {
     return (
         <article
-            className={`rounded-xl grid grid-cols-2 overflow-hidden bg-neutral-800 ${style}`}
+            className={`rounded-xl grid grid-cols-2 overflow-hidden bg-neutral-800 ${style} shadow-lg`}
         >
             <img
                 style={{
