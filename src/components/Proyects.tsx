@@ -4,6 +4,7 @@ import { ProyectsData } from '../data/ProyectsData';
 export const Proyects = () => {
     return (
         <section
+            className='pb-8'
             style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(2, 1fr)',
