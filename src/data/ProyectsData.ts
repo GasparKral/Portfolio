@@ -35,4 +35,13 @@ export const ProyectsData: ProyectsData[] = [
         img: './LMwebThumb.webp',
         technologies: ['Astro', 'React', 'Tailwind'],
     },
+    {
+        title: 'Wave Funtion Colapse Map',
+        description:
+            ' A Java aplication that allows you to create new procedural maps bases on the wave function colapse algorithm',
+        codeURL: 'https://github.com/GasparKral/wfc',
+        liveURL: '',
+        img: './WfcThumb.webp',
+        technologies: ['Java'],
+    },
 ];
