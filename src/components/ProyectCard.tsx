@@ -54,7 +54,7 @@ const ProyectCard = ({
                             href={liveURL}
                             target='_blank'
                             rel='noreferrer'
-                             hidden={liveURL == null ? true : false}
+                            hidden={liveURL == '' ? true : false}
                         >
                             <WatchLogo />
                         </a>
