@@ -6,6 +6,7 @@ interface Props {
 
 import { ViewTransitions } from 'astro:transitions';
 import { HamburguerMenu } from '@components/HamburgerMenu';
+import { CVFile } from '@assets/CVFile';
 
 import NavLink from '@components/NavLink.astro';
 import MediaLinks from '@components/MediaLinks.astro';
@@ -73,7 +74,36 @@ const currentDir = Astro.url.pathname.split('/').pop();
                     currentDir={currentDir}
                 />
             </menu>
-            <MediaLinks />
+            {
+                currentDir === 'contact' ? (
+                    <a
+                        href=''
+                        download='CV Gaspar Gomez Kral'
+                        class='text-white bg-acent border-2 border-transparent hover:text-acent hover:bg-white hover:border-acent rounded-md px-1 pt-[1px] py-1 col-span-2 transitio duration-200'
+                    >
+                        <CVFile
+                            style='inline'
+                            width='24'
+                            height='24'
+                        />
+                    </a>
+                ) : (
+                    <div class='flex gap-2'>
+                        <MediaLinks />{' '}
+                        <a
+                            href='/CVGaspar.pdf'
+                            download='CV Gaspar Gomez Kral'
+                            class='text-white bg-acent border-2 border-transparent hover:text-acent hover:bg-white hover:border-acent rounded-md px-1 pt-[1px] py-1 col-span-2 transitio duration-200'
+                        >
+                            <CVFile
+                                style='inline'
+                                width='24'
+                                height='24'
+                            />
+                        </a>
+                    </div>
+                )
+            }
         </nav>
         <main
             class={`flex flex-col py-8 px-8 pb-20 xl:py-24 xl:px-16 w-full min-h-screen items-center h-screen transition-colors duration-500 bg-primary-light font-nunito ${mainStyle}`}
