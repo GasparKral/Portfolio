@@ -77,7 +77,7 @@ const currentDir = Astro.url.pathname.split('/').pop();
             {
                 currentDir === 'contact' ? (
                     <a
-                        href=''
+                        href='/Portfolio//CVGaspar.pdf'
                         download='CV Gaspar Gomez Kral'
                         class='text-white bg-acent border-2 border-transparent hover:text-acent hover:bg-white hover:border-acent rounded-md px-1 pt-[1px] py-1 col-span-2 transitio duration-200'
                     >
@@ -91,9 +91,9 @@ const currentDir = Astro.url.pathname.split('/').pop();
                     <div class='flex gap-2'>
                         <MediaLinks />{' '}
                         <a
-                            href='/CVGaspar.pdf'
+                            href='/Portfolio//CVGaspar.pdf'
                             download='CV Gaspar Gomez Kral'
-                            class='text-white bg-acent border-2 border-transparent hover:text-acent hover:bg-white hover:border-acent rounded-md px-1 pt-[1px] py-1 col-span-2 transitio duration-200'
+                            class='text-acent col-span-2'
                         >
                             <CVFile
                                 style='inline'
