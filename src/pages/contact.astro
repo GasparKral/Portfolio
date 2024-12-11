@@ -14,21 +14,22 @@ import MediaLinks from '../components/MediaLinks.astro';
         </h1>
         <form
             class='w-full p-[4px] bg-gradient-to-r from-acent to-sky-500 rounded-lg flex'
+            action='mailto:gaspargkral@gmail.com?subject=Contacto&body=Reason:%20{{reason}}%0A%0AMensaje:%20{{message}}'
         >
             <fieldset
                 class='xl:grid xl:grid-cols-2 flex flex-col gap-4 px-4 xl:p-16 py-8 rounded-l-md text-acent bg-white'
             >
                 <label
-                    for='name'
+                    for='reason'
                     class='hidden xl:block mb-2 text-2xl font-bold font-frutiger'
                 >
-                    Name:
+                    Reason:
                 </label>
                 <input
                     type='text'
-                    name='name'
-                    id='name'
-                    placeholder='Your name'
+                    name='reason'
+                    id='reason'
+                    placeholder='Your reason'
                     required
                 />
                 <label
