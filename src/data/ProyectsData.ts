@@ -12,19 +12,10 @@ export const ProyectsData: ProyectsData[] = [
         title: 'TheRealColor',
         description:
             'A web app that allows you to create palettes, saved and export to vanilla CSS or Tailwind',
-        codeURL: 'https://github.com/GasparKral/TheRealColor.v2',
+        codeURL: 'https://github.com/GasparKral/TheRealColorBun',
         liveURL: '',
         img: './ThRealColorthumb.webp',
         technologies: ['Express', 'React', 'Vite', 'Tailwind'],
-    },
-    {
-        title: 'Scomponents',
-        description:
-            'A collection of reusable components for React, Astro and Vanilla JS/HTML',
-        codeURL: 'https://github.com/GasparKral/Scomponents',
-        liveURL: '',
-        img: './ScomponentsThumb.webp',
-        technologies: ['React', 'Astro', 'Tailwind'],
     },
     {
         title: 'LMweb',
@@ -36,12 +27,12 @@ export const ProyectsData: ProyectsData[] = [
         technologies: ['Astro', 'React', 'Tailwind'],
     },
     {
-        title: 'Wave Funtion Colapse Map',
+        title: 'GPS-SL web',
         description:
-            ' A Java aplication that allows you to create new procedural maps bases on the wave function colapse algorithm',
-        codeURL: 'https://github.com/GasparKral/wfc',
-        liveURL: '',
-        img: './WfcThumb.webp',
-        technologies: ['Java'],
+            'A web page made with Astro and TailwindCSS v4, using the mardoc Astro pluging and Github Actions to CD the news automatically to the hosting via FTP',
+        codeURL: '',
+        liveURL: 'web.gps-sl.es',
+        img: './GPSSLThumb.png',
+        technologies: ['Astro', 'Tailwind', "Github's Actions"],
     },
 ];
