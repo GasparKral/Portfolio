@@ -46,6 +46,7 @@ const ProyectCard = ({
                             href={codeURL}
                             target='_blank'
                             rel='noreferrer'
+                            hidden={codeURL == '' ? true : false}
                         >
                             <SourceCodeLogo />
                         </a>

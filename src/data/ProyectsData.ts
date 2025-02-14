@@ -31,7 +31,7 @@ export const ProyectsData: ProyectsData[] = [
         description:
             'A web page made with Astro and TailwindCSS v4, using the mardoc Astro pluging and Github Actions to CD the news automatically to the hosting via FTP',
         codeURL: '',
-        liveURL: 'web.gps-sl.es',
+        liveURL: 'http://web.gps-sl.es',
         img: './GPSSLThumb.png',
         technologies: ['Astro', 'Tailwind', "Github's Actions"],
     },
